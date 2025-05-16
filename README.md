@@ -137,3 +137,40 @@ Create a few sample files to test the backup process:
 echo 'Sample content for File 1' > files-to-backup/file1.txt
 echo 'Sample content for File 2' > files-to-backup/file2.txt
 ```
+
+### **Step 7: Prepare the Bash Script**
+
+Since you cloned this repository, the s3_backup.sh script should already be included. Now, you just need to make it executable and run it.
+
+#### **1. Make the Script Executable**
+
+Grant execute permissions to the script:
+```bash
+chmod +x s3_backup.sh
+```
+#### **2. Run the Script**
+
+Now run the script to start the backup process:
+```bash
+./s3_backup.sh
+```
+
+This script will:
+
+Check if the bucket is public or private.
+
+Upload all files in the files-to-backup directory to the S3 bucket.
+
+Generate a report of the uploaded files.
+
+Verify that the files exist in the S3 bucket.
+
+#### **3. Verify the Output**
+
+Check the contents of the generated report:
+
+```bash
+cat upload_report.txt
+```
+
+You should see a list of uploaded files and their sizes.
