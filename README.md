@@ -31,6 +31,23 @@ You should see output similar to:
 ```
 aws-cli/2.x.x Python/3.x.x Darwin/x86_64
 ```
+
+## Cloning This Repository
+
+To get started with this lab, clone this repository to your local machine:
+
+```bash
+git clone https://github.com/your-username/aws-s3-backup.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd aws-s3-backup
+```
+
+This repository contains all the necessary files, including the `s3_backup.sh` script, which you will use in the steps below.
+
 ### **Step 1: Create an IAM User on AWS**
 
 To securely access your S3 bucket, you need an IAM user with programmatic access.
