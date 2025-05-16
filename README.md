@@ -12,7 +12,25 @@ Before starting this lab, make sure you have the following:
 2. **IAM User with Programmatic Access:** A dedicated IAM user with programmatic access to S3. You will create this in the steps below.
 3. **AWS CLI Installed and Configured:** The AWS Command Line Interface (CLI) installed and configured on your local machine.
 4. **Bash Shell:** A Linux, macOS, or Windows Subsystem for Linux (WSL) environment.
+### **Install AWS CLI**
 
+Before proceeding, ensure you have the AWS CLI installed. If you're using macOS and have Homebrew installed, you can install it with the following command:
+
+```bash
+brew install awscli
+```
+
+After installation, verify the AWS CLI version:
+
+```bash
+aws --version
+```
+
+You should see output similar to:
+
+```
+aws-cli/2.x.x Python/3.x.x Darwin/x86_64
+```
 ### **Step 1: Create an IAM User on AWS**
 
 To securely access your S3 bucket, you need an IAM user with programmatic access.
