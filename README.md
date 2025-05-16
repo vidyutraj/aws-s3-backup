@@ -129,9 +129,11 @@ Create a directory on your local machine where you will place the files you want
 
 ```bash
 mkdir files-to-backup
+```
 #### **2. Add Sample Files**
 
 Create a few sample files to test the backup process:
 ```bash
 echo 'Sample content for File 1' > files-to-backup/file1.txt
 echo 'Sample content for File 2' > files-to-backup/file2.txt
+```
