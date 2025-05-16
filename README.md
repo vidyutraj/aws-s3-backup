@@ -213,3 +213,69 @@ https://<BUCKET_NAME>.s3.<REGION>.amazonaws.com/<FILE_NAME>
 ```
 
 Replace `<BUCKET_NAME>`, `<REGION>`, and `<FILE_NAME>` with your bucket name, region, and file name respectively.
+
+### **Step 9: Clean Up**
+
+After completing the lab, clean up the resources to avoid unnecessary charges and maintain a tidy environment.
+
+#### **1. Delete Uploaded Files from S3**
+
+Remove all files from your S3 bucket:
+
+```bash
+aws s3 rm s3://your-unique-bucket-name --recursive
+```
+
+#### **2. Delete the S3 Bucket**
+
+Once the bucket is empty, delete it:
+
+```bash
+aws s3 rb s3://your-unique-bucket-name
+```
+
+#### **3. Remove Local Files**
+
+If you no longer need the local files and script, delete them:
+
+```bash
+rm -rf files-to-backup s3_backup.sh upload_report.txt
+```
+
+By following these steps, you ensure that no unnecessary resources are left behind.
+
+### **Summary of Key Points**
+
+1. **Setup Requirements:**
+    - AWS account with IAM user and programmatic access.
+    - AWS CLI installed and configured.
+    - Bash shell environment.
+
+2. **AWS CLI Installation and Configuration:**
+    - Install AWS CLI using Homebrew or other methods.
+    - Configure AWS CLI with access keys, region, and output format.
+
+3. **IAM User Creation:**
+    - Create an IAM user with `AmazonS3FullAccess` or a custom policy.
+    - Save the access keys for CLI configuration.
+
+4. **S3 Bucket Management:**
+    - Create a unique S3 bucket.
+    - Verify bucket creation using `aws s3 ls`.
+
+5. **Local File Preparation:**
+    - Create a directory (`files-to-backup`) and add sample files.
+
+6. **Bash Script Execution:**
+    - Update the script with your bucket name.
+    - Run the script to upload files, check bucket settings, and generate a report.
+
+7. **Validation:**
+    - Verify uploaded files using AWS CLI and browser (if public).
+    - Check bucket ACL and policy.
+
+8. **Cleanup:**
+    - Delete uploaded files and the S3 bucket.
+    - Remove local files and scripts to avoid unnecessary charges.
+
+This lab provides hands-on experience with AWS S3, Bash scripting, and the AWS CLI for secure and automated file management.
