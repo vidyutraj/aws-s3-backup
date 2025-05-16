@@ -156,14 +156,10 @@ Now run the script to start the backup process:
 ```
 
 This script will:
-
-Check if the bucket is public or private.
-
-Upload all files in the files-to-backup directory to the S3 bucket.
-
-Generate a report of the uploaded files.
-
-Verify that the files exist in the S3 bucket.
+- Check if the bucket is public or private.
+- Upload all files in the files-to-backup directory to the S3 bucket.
+- Generate a report of the uploaded files.
+- Verify that the files exist in the S3 bucket.
 
 #### **3. Verify the Output**
 
