@@ -173,6 +173,8 @@ You should see a list of uploaded files and their sizes.
 
 ### **Step 8: Validate in AWS**
 
+<img width="1437" alt="Screen Shot 2025-05-15 at 9 00 20 PM" src="https://github.com/user-attachments/assets/60cbb3a7-7696-4c82-a605-b34534555f9d" />
+
 #### **1. Check Uploaded Files**
 
 Use the AWS CLI to list the files in your S3 bucket:
