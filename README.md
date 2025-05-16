@@ -178,7 +178,7 @@ cat upload_report.txt
 
 You should see a list of uploaded files and their sizes.
 
-### **Step 8: Validate in AWS**
+### **Step 8: Validate in AWS CLI/AWS Management Console**
 
 <img width="1437" alt="Screen Shot 2025-05-15 at 9 00 20 PM" src="https://github.com/user-attachments/assets/60cbb3a7-7696-4c82-a605-b34534555f9d" />
 
@@ -244,38 +244,10 @@ rm -rf files-to-backup s3_backup.sh upload_report.txt
 
 By following these steps, you ensure that no unnecessary resources are left behind.
 
-### **Summary of Key Points**
+### **Main Learnings**
 
-1. **Setup Requirements:**
-    - AWS account with IAM user and programmatic access.
-    - AWS CLI installed and configured.
-    - Bash shell environment.
+1. Gained hands-on experience with AWS S3 and the AWS CLI.
+2. Understood how to automate tasks using Bash scripting.
+3. Learn to verify and validate S3 bucket configurations for security.
 
-2. **AWS CLI Installation and Configuration:**
-    - Install AWS CLI using Homebrew or other methods.
-    - Configure AWS CLI with access keys, region, and output format.
-
-3. **IAM User Creation:**
-    - Create an IAM user with `AmazonS3FullAccess` or a custom policy.
-    - Save the access keys for CLI configuration.
-
-4. **S3 Bucket Management:**
-    - Create a unique S3 bucket.
-    - Verify bucket creation using `aws s3 ls`.
-
-5. **Local File Preparation:**
-    - Create a directory (`files-to-backup`) and add sample files.
-
-6. **Bash Script Execution:**
-    - Update the script with your bucket name.
-    - Run the script to upload files, check bucket settings, and generate a report.
-
-7. **Validation:**
-    - Verify uploaded files using AWS CLI and browser (if public).
-    - Check bucket ACL and policy.
-
-8. **Cleanup:**
-    - Delete uploaded files and the S3 bucket.
-    - Remove local files and scripts to avoid unnecessary charges.
-
-This lab provides hands-on experience with AWS S3, Bash scripting, and the AWS CLI for secure and automated file management.
+This lab is great for providing hands-on experience with AWS S3, Bash scripting, and the AWS CLI for secure and automated file management.
