@@ -4,6 +4,22 @@
 
 This project demonstrates the use of AWS S3, Bash scripting, and the AWS CLI to automate file uploads, check S3 bucket configurations, and generate detailed reports. It is designed as a hands-on lab to build practical skills with these technologies, including secure file management, automation, and cloud storage best practices.
 
+## Cloning This Repository
+
+To get started with this lab, clone this repository to your local machine:
+
+```bash
+git clone https://github.com/your-username/aws-s3-backup.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd aws-s3-backup
+```
+
+This repository contains all the necessary files, including the `s3_backup.sh` script, which you will use in the steps below.
+
 ## Prerequisites
 
 Before starting this lab, make sure you have the following:
@@ -31,22 +47,6 @@ You should see output similar to:
 ```
 aws-cli/2.x.x Python/3.x.x Darwin/x86_64
 ```
-
-## Cloning This Repository
-
-To get started with this lab, clone this repository to your local machine:
-
-```bash
-git clone https://github.com/your-username/aws-s3-backup.git
-```
-
-Navigate to the project directory:
-
-```bash
-cd aws-s3-backup
-```
-
-This repository contains all the necessary files, including the `s3_backup.sh` script, which you will use in the steps below.
 
 ### **Step 1: Create an IAM User on AWS**
 
