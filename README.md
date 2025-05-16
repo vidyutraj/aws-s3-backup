@@ -45,7 +45,7 @@ To securely access your S3 bucket, you need an IAM user with programmatic access
 
    * Click **Users** on the left sidebar.
    * Click the **Add users** button.
-   * **Username:** Choose a username (e.g., `s3-backup-user`).
+   * **Username:** Choose a username (e.g., `s3test`).
    * **Access Type:** Select **Programmatic access** (required for CLI access).
 
 4. **Set Permissions:**
