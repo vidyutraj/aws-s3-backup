@@ -119,8 +119,19 @@ aws s3 ls
 
 You should see your new bucket in the list.
 
-### **Next Steps**
+### **Step 6: Set Up Local Files**
 
-After setting up your S3 bucket and configuring your AWS CLI, you can proceed to creating the Bash script for automating your backups.
+Before you can run your S3 backup script, you need to prepare some local files to back up. Follow these steps:
 
-Would you like me to include the script and detailed run instructions in this README as well?
+#### **1. Create the Backup Directory**
+
+Create a directory on your local machine where you will place the files you want to back up:
+
+```bash
+mkdir files-to-backup
+#### **2. Add Sample Files**
+
+Create a few sample files to test the backup process:
+```bash
+echo 'Sample content for File 1' > files-to-backup/file1.txt
+echo 'Sample content for File 2' > files-to-backup/file2.txt
