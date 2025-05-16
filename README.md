@@ -170,3 +170,37 @@ cat upload_report.txt
 ```
 
 You should see a list of uploaded files and their sizes.
+
+### **Step 8: Validate in AWS**
+
+#### **1. Check Uploaded Files**
+
+Use the AWS CLI to list the files in your S3 bucket:
+
+```bash
+aws s3 ls s3://your-unique-bucket-name
+```
+
+Confirm that the uploaded files (e.g., `file1.txt`, `file2.txt`) appear in the bucket.
+
+#### **2. Review Bucket ACL and Policy**
+
+Verify that the script correctly identifies whether the bucket is public or private:
+
+```bash
+aws s3api get-bucket-acl --bucket your-unique-bucket-name
+```
+
+```bash
+aws s3api get-bucket-policy --bucket your-unique-bucket-name
+```
+
+#### **3. Test Public Access (if applicable)**
+
+If the bucket is public, try accessing a file directly via the browser:
+
+```
+https://<BUCKET_NAME>.s3.<REGION>.amazonaws.com/<FILE_NAME>
+```
+
+Replace `<BUCKET_NAME>`, `<REGION>`, and `<FILE_NAME>` with your bucket name, region, and file name respectively.
