@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Variables
-BUCKET_NAME="s3-backup-vidyutraj-123"
+BUCKET_NAME="my-s3-bucket-backup"
 SOURCE_DIR="./files-to-backup"
 REPORT_FILE="./upload_report.txt"
 
