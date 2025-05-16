@@ -149,6 +149,13 @@ Grant execute permissions to the script:
 chmod +x s3_backup.sh
 ```
 #### **2. Run the Script**
+Before running the script, open the `s3_backup.sh` file in a text editor and update the bucket name to match the one you created:
+
+```bash
+BUCKET_NAME="your-unique-bucket-name"
+```
+
+Replace `your-unique-bucket-name` with the name of your S3 bucket.
 
 Now run the script to start the backup process:
 ```bash
